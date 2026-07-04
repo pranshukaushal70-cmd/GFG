@@ -1,3 +1,13 @@
+class maxHeap {
+private:
+    vector<int> heap;
+
+public:
+    void push(int x) {
+        heap.push_back(x);
+
+        int idx = heap.size() - 1;
+
         while (idx > 0) {
             int parent = (idx - 1) / 2;
 
